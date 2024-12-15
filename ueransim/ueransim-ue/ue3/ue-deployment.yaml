@@ -33,6 +33,7 @@ spec:
           imagePullPolicy: Always
           name: ue
           securityContext:
+            privileged: true
             capabilities:
               add: ["NET_ADMIN"]
           # command: [ "/bin/bash", "-c", "--" ]
